@@ -125,7 +125,7 @@ body {
 }
 
 .social-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.19);
   color: #fdda26; /* Change the color on hover */
 }
 

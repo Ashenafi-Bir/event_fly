@@ -111,3 +111,22 @@ body {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+/* Social Media Links */
+.social-links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #2674b6;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #fdda26; /* Change the color on hover */
+}
+
+/* You can adjust the size, spacing, and colors as needed */

@@ -1,75 +1,113 @@
+/* General Body Styling */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #1a1a2e, #16213e);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  
-  .flyer-container {
-    perspective: 1000px;
-  }
-  
-  .flyer {
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    max-width: 600px;
-    width: 90%;
-    transform: rotateY(0deg);
-    transition: transform 0.6s ease;
-  }
-  
-  .flyer:hover {
-    transform: rotateY(15deg);
-  }
-  
-  .flyer-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .flyer-content {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .flyer-content h1 {
-    font-size: 1.8em;
-    color: #333;
-  }
-  
-  .event-date, .event-location {
-    margin: 10px 0;
-    font-size: 1em;
-    color: #555;
-  }
-  
-  .event-description {
-    margin: 20px 0;
-    font-size: 1em;
-    color: #444;
-    line-height: 1.6;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background: linear-gradient(to right, #2575fc, #6a11cb);
-    transform: scale(1.1);
-  }
-  
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right,#2674b6, #fdda26);
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* Ensures a top-to-bottom layout */
+  align-items: center;
+}
+
+/* Flyer Section */
+.flyer-container {
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.flyer {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 600px;
+  width: 90%;
+  transition: transform 0.6s ease;
+}
+
+.flyer:hover {
+  transform: scale(1.02);
+}
+
+.flyer-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.flyer-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.flyer-content h1 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.event-date, .event-location {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #555;
+}
+
+.event-description {
+  margin: 20px 0;
+  font-size: 1em;
+  color: #444;
+  line-height: 1.6;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background: linear-gradient(to right, #2674b6, #fdda26);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to right, #fdda26, #2674b6);
+  transform: scale(1.1);
+}
+
+/* Event Highlights Section */
+.image-gallery {
+  width: 100%; /* Full width */
+  padding: 0px 0;
+
+  color: #2674b6;
+  text-align: center;
+}
+
+.image-gallery h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2674b6;
+}
+
+/* Image Grid Styling */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 0 0%; /* Add spacing on left/right */
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
